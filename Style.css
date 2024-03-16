@@ -1,0 +1,80 @@
+body {
+    font-family: 'Arial','Roboto', "Segoe UI", Tahoma, Verdana, sans-serif;
+    background-color:  rgb(110, 20, 30);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color:white;
+}
+
+#board {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border: 1px solid lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cell:hover {
+    background-color: rgb(177, 173, 173);
+}
+
+
+
+.button-container {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color:whitesmoke;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: green;
+}
+#winnerCount{
+    margin-top: 20px;
+}
+
+#winnerCount p {
+    font-size: 1.3em;
+    margin: 5px 0;
+    color: whitesmoke;
+}
+#message {
+    font-size: 1.3em;
+    margin: 5px 0;
+    color: whitesmoke;
+}
